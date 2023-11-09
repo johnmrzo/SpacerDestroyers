@@ -28,6 +28,7 @@ class GameScene: SKScene {
     backgroundColor = SKColor.black
     setupInvaders()
     setupPlayer()
+    invokeInvaderFire()
     
     // Get label node from scene and store it for use later
     self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
@@ -63,7 +64,7 @@ class GameScene: SKScene {
   }
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    
+    player.fireBullet(scene: self)
   }
   
   override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -131,4 +132,32 @@ class GameScene: SKScene {
   }
   
   
+  func invokeInvaderFire(){
+    let fireBullet = SKAction.run(){
+      self.fireInvaderBullet()
+    }
+    let waitToFireInvaderBullet = SKAction.wait(forDuration: 1.5)
+    let invaderFire = SKAction.sequence([fireBullet,waitToFireInvaderBullet])
+    let repeatForeverAction = SKAction.repeatForever(invaderFire)
+    run(repeatForeverAction)
+  }
+
+  func fireInvaderBullet(){
+    if(invadersWhoCanFire.isEmpty){
+      levelNum += 1
+      // Complete the level later by adding its method here! (Part 5)
+    }else{
+      let randomInvader = invadersWhoCanFire.randomElement()
+      randomInvader!.fireBullet(scene: self)
+    }
+  }
+  
+}
+
+extension Array where Element: AnyObject {
+  func randomElement() -> Element? {
+    guard !isEmpty else { return nil }
+    let randomIndex = Int(arc4random_uniform(UInt32(count)))
+    return self[randomIndex]
+  }
 }
