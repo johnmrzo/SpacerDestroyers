@@ -18,6 +18,8 @@
 		EC5553D52AFD2D55008917BE /* Space_DestroyersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5553D42AFD2D55008917BE /* Space_DestroyersUITests.swift */; };
 		EC5553D72AFD2D55008917BE /* Space_DestroyersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5553D62AFD2D55008917BE /* Space_DestroyersUITestsLaunchTests.swift */; };
 		EC5553E62AFD2F60008917BE /* StartGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5553E52AFD2F60008917BE /* StartGameScene.swift */; };
+		EC5553E82AFD3101008917BE /* Invader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5553E72AFD3101008917BE /* Invader.swift */; };
+		EC5553EA2AFD3149008917BE /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5553E92AFD3149008917BE /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		EC5553D42AFD2D55008917BE /* Space_DestroyersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space_DestroyersUITests.swift; sourceTree = "<group>"; };
 		EC5553D62AFD2D55008917BE /* Space_DestroyersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space_DestroyersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EC5553E52AFD2F60008917BE /* StartGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameScene.swift; sourceTree = "<group>"; };
+		EC5553E72AFD3101008917BE /* Invader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invader.swift; sourceTree = "<group>"; };
+		EC5553E92AFD3149008917BE /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 		EC5553E42AFD2E8D008917BE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EC5553E72AFD3101008917BE /* Invader.swift */,
+				EC5553E92AFD3149008917BE /* Player.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -281,7 +287,9 @@
 			files = (
 				EC5553B72AFD2D53008917BE /* GameScene.swift in Sources */,
 				EC5553E62AFD2F60008917BE /* StartGameScene.swift in Sources */,
+				EC5553E82AFD3101008917BE /* Invader.swift in Sources */,
 				EC5553B92AFD2D53008917BE /* GameViewController.swift in Sources */,
+				EC5553EA2AFD3149008917BE /* Player.swift in Sources */,
 				EC5553B12AFD2D53008917BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
