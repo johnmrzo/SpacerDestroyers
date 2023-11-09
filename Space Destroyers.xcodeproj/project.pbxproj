@@ -23,6 +23,7 @@
 		EC5553EC2AFD361A008917BE /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5553EB2AFD361A008917BE /* Bullet.swift */; };
 		EC5553EE2AFD36AF008917BE /* InvaderBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5553ED2AFD36AF008917BE /* InvaderBullet.swift */; };
 		EC5553F02AFD36C3008917BE /* PlayerBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5553EF2AFD36C3008917BE /* PlayerBullet.swift */; };
+		EC5553F22AFD3AC7008917BE /* CollisionCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5553F12AFD3AC7008917BE /* CollisionCategories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		EC5553EB2AFD361A008917BE /* Bullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
 		EC5553ED2AFD36AF008917BE /* InvaderBullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvaderBullet.swift; sourceTree = "<group>"; };
 		EC5553EF2AFD36C3008917BE /* PlayerBullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBullet.swift; sourceTree = "<group>"; };
+		EC5553F12AFD3AC7008917BE /* CollisionCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionCategories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				EC5553EB2AFD361A008917BE /* Bullet.swift */,
 				EC5553ED2AFD36AF008917BE /* InvaderBullet.swift */,
 				EC5553EF2AFD36C3008917BE /* PlayerBullet.swift */,
+				EC5553F12AFD3AC7008917BE /* CollisionCategories.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				EC5553B72AFD2D53008917BE /* GameScene.swift in Sources */,
 				EC5553E62AFD2F60008917BE /* StartGameScene.swift in Sources */,
 				EC5553E82AFD3101008917BE /* Invader.swift in Sources */,
+				EC5553F22AFD3AC7008917BE /* CollisionCategories.swift in Sources */,
 				EC5553EC2AFD361A008917BE /* Bullet.swift in Sources */,
 				EC5553B92AFD2D53008917BE /* GameViewController.swift in Sources */,
 				EC5553EA2AFD3149008917BE /* Player.swift in Sources */,
